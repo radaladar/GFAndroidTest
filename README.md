@@ -2,12 +2,7 @@
 
 Show us what you can do and how clean your code is!
 
-Write an app that shows the most popular movies. 
-
-### Resources:
-**web:** [The Movie DB](https://www.themoviedb.org)
-
-**Docs:** [The Movie DB Doc's](http://docs.themoviedb.apiary.io/)
+Write an app that loads the most popular movies from theMovieDb.com and shows them. 
 
 The Moviedb.org is an online database that lets you: browse and rate movies, TV shows and people.
 
@@ -21,12 +16,12 @@ Create a public Git repository for free on [Github](https://github.com), [Bitbuc
 
 ### Task:
 
-Create demo app that will:
- - on load fetch the top 20 most popular movies and display it in a RecyclerView
- - open a detail page if the user clicks on the movie image or the button
+Create app that will:
+ - on load fetch the most popular movies and display it in a RecyclerView
+ - open a detail page if the user clicks on a movie
 
 For plus points:
- - Animations
+ - Animations (Tip: https://github.com/lgvalle/Material-Animations)
  - Search functionality on list page
  - CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
  - No internet case error handling
@@ -42,5 +37,10 @@ We’re looking for:
 
 
 ---
+
+### Resources:
+**web:** [The Movie DB](https://www.themoviedb.org)
+
+**Docs:** [The Movie DB Doc's](http://docs.themoviedb.apiary.io/)
 
 [@BlackSwan](https://www.blackswan.com) - 2017
