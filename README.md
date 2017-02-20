@@ -17,14 +17,16 @@ Create a public Git repository for free on [Github](https://github.com), [Bitbuc
 ### Task:
 
 Create app that will:
- - on load fetch the most popular movies and display it in a RecyclerView
- - open a detail page if the user clicks on a movie
+
+* on load fetch the most popular movies and display it in a RecyclerView
+* open a detail page if the user clicks on a movie
 
 For plus points:
-*Animations (Tip: https://github.com/lgvalle/Material-Animations)
-*Search functionality on list page
-*CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
-*No internet case error handling
+
+* Animations (Tip: https://github.com/lgvalle/Material-Animations)
+* Search functionality on list page
+* CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
+* No internet case error handling
 
 Tips!
 We’re looking for:
