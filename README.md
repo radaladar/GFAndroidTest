@@ -24,12 +24,13 @@ Create app that will:
 For image loading, use Picasso or Glide. 
 The minSDKVersion should be at least 19.
 
-For plus points:
+For bonus points:
 
 * Animations (Tip: https://github.com/lgvalle/Material-Animations)
 * Search functionality on list page
+* Display more than 20 movies from the movieDb (see pagination) (load next page of movies when the user scrolled to the bottom)
 * CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
-* No internet case handling
+* No internet connecton error handling
 
 Tips!
 We’re looking for:
