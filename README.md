@@ -21,10 +21,10 @@ Create app that will:
  - open a detail page if the user clicks on a movie
 
 For plus points:
-*  - Animations (Tip: https://github.com/lgvalle/Material-Animations)
-*  - Search functionality on list page
-*  - CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
-*  - No internet case error handling
+*Animations (Tip: https://github.com/lgvalle/Material-Animations)
+*Search functionality on list page
+*CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
+*No internet case error handling
 
 Tips!
 We’re looking for:
