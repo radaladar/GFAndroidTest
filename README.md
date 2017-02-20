@@ -2,9 +2,9 @@
 
 Show us what you can do and how clean your code is!
 
-Write an app that loads the most popular movies from theMovieDb.com and shows them. 
+Write an app that loads the most popular movies from theMovieDb.com and shows them. You can use the given basic app skeleton, but please rename the package from com.greenfox.androidtest to com.*yourname*.androidtest. You can modify the existing code, it is for your help. 
 
-The Moviedb.org is an online database that lets you: browse and rate movies, TV shows and people.
+**The Moviedb.org is an online database that lets you: browse and rate movies, TV shows and people.
 
 ### Submission notes
 
@@ -21,12 +21,15 @@ Create app that will:
 * on load fetch the most popular movies and display it in a RecyclerView
 * open a detail page if the user clicks on a movie
 
+For image loading, use Picasso or Glide. 
+The minSDKVersion should be 19.
+
 For plus points:
 
 * Animations (Tip: https://github.com/lgvalle/Material-Animations)
 * Search functionality on list page
 * CollapsingToolbar on detail page (https://antonioleiva.com/wp-content/uploads/2015/07/collapsing-toolbar-layout.gif)
-* No internet case error handling
+* No internet case handling
 
 Tips!
 We’re looking for:
