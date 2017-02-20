@@ -22,7 +22,7 @@ Create app that will:
 * open a detail page if the user clicks on a movie
 
 For image loading, use Picasso or Glide. 
-The minSDKVersion should be 19.
+The minSDKVersion should be at least 19.
 
 For plus points:
 
@@ -33,8 +33,9 @@ For plus points:
 
 Tips!
 We’re looking for:
-- Clean code
-- UX/Design understanding
+
+* Clean code
+* UX/Design understanding
 
 **Suggested design**
 
