@@ -2,7 +2,7 @@
 
 Show us what you can do and how clean your code is!
 
-Write an app that loads the most popular movies from theMovieDb.com and shows them. You can use the given basic app skeleton, but please rename the package from com.greenfox.androidtest to com.*yourname*.androidtest. You can modify the existing code, it is for your help. 
+Write an app that loads the most popular movies from theMovieDb.com and displays them. You can use the given basic app skeleton, but please rename the package from com.greenfox.androidtest to com.*yourname*.androidtest. You are allowed to modify the existing code, it is for your help. 
 
 **The Moviedb.org is an online database that lets you: browse and rate movies, TV shows and people.
 
@@ -12,7 +12,7 @@ Code **MUST** be submitted through any distributed version control system.
 
 **Any other way of code submission will be an automatic failure. Eg. zip/rar or similar** 
   
-Create a public Git repository for free on [Github](https://github.com), [Bitbucket](https://bitbucket.org), [Gitlab](https://gitlab.com) and provide us with the link.
+Create a public Git repository for free on [Github](https://github.com) or [Bitbucket](https://bitbucket.org) or [Gitlab](https://gitlab.com) and send the link to andras.kloczl@blackswan.com with subject: "Greenfox Android Test"
 
 ### Task:
 
