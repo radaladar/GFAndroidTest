@@ -12,7 +12,7 @@ Code **MUST** be submitted through any distributed version control system.
 
 **Any other way of code submission will be an automatic failure. Eg. zip/rar or similar** 
   
-Create a public Git repository for free on [Github](https://github.com) or [Bitbucket](https://bitbucket.org) or [Gitlab](https://gitlab.com) and send the link to andras.kloczl@blackswan.com with subject: "Greenfox Android Test"
+Create a public Git repository for free on [Github](https://github.com) or [Bitbucket](https://bitbucket.org) or [Gitlab](https://gitlab.com) and send the link in email to andras.kloczl@blackswan.com with subject: "Greenfox Android Test: *YOUR NAME*"
 
 ### Task:
 
