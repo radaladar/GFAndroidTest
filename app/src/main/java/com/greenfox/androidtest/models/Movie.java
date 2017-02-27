@@ -22,8 +22,6 @@ public class Movie implements Serializable {
     @SerializedName("genre_ids")
     private List<Integer> genreIdList;
 
-    private List<Genre> genres;
-
     @SerializedName("id")
     private int id;
 
@@ -51,4 +49,59 @@ public class Movie implements Serializable {
     @SerializedName("vote_average")
     private float averageVote;
 
+    public String getPosterPath() {
+        return posterPath;
+    }
+
+    public boolean isAdult() {
+        return isAdult;
+    }
+
+    public String getOverview() {
+        return overview;
+    }
+
+    public String getReleaseDateText() {
+        return releaseDateText;
+    }
+
+    public List<Integer> getGenreIdList() {
+        return genreIdList;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getOriginalTitle() {
+        return originalTitle;
+    }
+
+    public String getOriginalLanguage() {
+        return originalLanguage;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getBackdropPath() {
+        return backdropPath;
+    }
+
+    public float getPopularity() {
+        return popularity;
+    }
+
+    public int getVoteCount() {
+        return voteCount;
+    }
+
+    public boolean isVideo() {
+        return video;
+    }
+
+    public float getAverageVote() {
+        return averageVote;
+    }
 }

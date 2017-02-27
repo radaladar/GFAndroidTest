@@ -1,5 +1,6 @@
 package com.greenfox.androidtest.network;
 
+import com.greenfox.androidtest.models.GenresListResponse;
 import com.greenfox.androidtest.models.LoadPopularMoviesResponse;
 
 import retrofit2.Callback;
@@ -27,6 +28,10 @@ public class MovieDbManager {
     private MovieDbManager(){
         retrofit = RetrofitHelper.initRetrofit();
         movieDbApi = retrofit.create(MovieDbApi.class);
+    }
+
+    public void loadGenres(Callback<GenresListResponse> callback) {
+        movieDbApi.getGenres().enqueue(callback);
     }
 
     public void loadPopularMovies(int page, Callback<LoadPopularMoviesResponse> callback) {
