@@ -1,15 +1,19 @@
 package com.greenfox.androidtest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.greenfox.androidtest.adapter.MovieAdapter;
 import com.greenfox.androidtest.models.Genre;
 import com.greenfox.androidtest.models.GenresListResponse;
 import com.greenfox.androidtest.models.LoadPopularMoviesResponse;
+import com.greenfox.androidtest.models.Movie;
 import com.greenfox.androidtest.network.MovieDbManager;
 
 import java.util.List;
@@ -18,11 +22,14 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static java.lang.Math.toIntExact;
+
 public class MainActivity extends Activity {
 
     RecyclerView recyclerView;
     MovieAdapter movieAdapter;
     List<Genre> genreList;
+    List<Movie> movieList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +38,7 @@ public class MainActivity extends Activity {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
 
         MovieDbManager.getInstance().loadGenres(new Callback<GenresListResponse>() {
             @Override
@@ -47,7 +55,8 @@ public class MainActivity extends Activity {
         MovieDbManager.getInstance().loadPopularMovies(1, new Callback<LoadPopularMoviesResponse>() {
             @Override
             public void onResponse(Call<LoadPopularMoviesResponse> call, Response<LoadPopularMoviesResponse> response) {
-                movieAdapter = new MovieAdapter(response.body().getMovies(), genreList, getApplicationContext());
+                movieList = response.body().getMovies();
+                movieAdapter = new MovieAdapter(movieList, genreList, getApplicationContext());
                 recyclerView.setAdapter(movieAdapter);
             }
 

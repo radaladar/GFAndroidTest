@@ -1,13 +1,16 @@
 package com.greenfox.androidtest.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.greenfox.androidtest.MovieDetailsActivity;
 import com.greenfox.androidtest.R;
 import com.greenfox.androidtest.models.Genre;
 import com.greenfox.androidtest.models.Movie;
@@ -42,7 +45,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Movie movie = movieList.get(position);
+        final Movie movie = movieList.get(position);
         Picasso.with(context)
                 .load(MovieDbManager.IMAGE_BASE_URL + movie.getPosterPath())
                 .into(holder.poster);
@@ -51,6 +54,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         holder.genre.setText(getGenresAsString(movie));
         holder.year.setText(movie.getReleaseDateText().substring(0,4));
         holder.description.setText(movie.getOverview());
+        holder.moreInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, MovieDetailsActivity.class);
+                intent.putExtra("movie_id", movie.getId());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
@@ -78,6 +89,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
         TextView genre;
         TextView year;
         TextView description;
+        Button moreInfo;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -87,6 +99,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
             genre = (TextView) itemView.findViewById(R.id.genre);
             year = (TextView) itemView.findViewById(R.id.year);
             description = (TextView) itemView.findViewById(R.id.description);
+            moreInfo = (Button) itemView.findViewById(R.id.moreInfo);
         }
     }
 }

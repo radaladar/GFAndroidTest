@@ -19,52 +19,69 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_margin="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/box1"
-                    android:layout_alignParentStart="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/movieTitle"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignStart="@+id/rating"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/starImg"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
                     <ImageView
                         android:id="@+id/starImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@android:drawable/star_off"/>
+                        android:src="@android:drawable/star_off" />
 
-                    <TextView
-                        android:id="@+id/rating"
-                        android:layout_toStartOf="@id/starImg"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
                 </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/box2"
-                    android:layout_below="@id/box1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/genre"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignStart="@+id/year"
+                        android:layout_marginTop="6dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                    <TextView
+                        android:id="@+id/year"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
+                        android:layout_toStartOf="@+id/calendar"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
 
                     <ImageView
@@ -72,30 +89,51 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:src="@android:drawable/ic_menu_my_calendar"/>
+                        android:src="@android:drawable/ic_menu_my_calendar" />
 
-                    <TextView
-                        android:id="@+id/year"
-                        android:layout_toStartOf="@id/calendar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
                 </RelativeLayout>
 
-                <TextView
-                    android:layout_below="@id/box2"
-                    android:id="@+id/description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/moreInfo"
+                <RelativeLayout
+                    android:id="@+id/box3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:text="More info..." />
-            </RelativeLayout>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:divider="?android:dividerHorizontal"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:showDividers="middle" />
+
+
+                    <Button
+                        android:id="@+id/moreInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:background="@null"
+                        android:clickable="true"
+                        android:text="More info"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
+
 </LinearLayout>
