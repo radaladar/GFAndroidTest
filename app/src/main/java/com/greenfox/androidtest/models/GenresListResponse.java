@@ -6,6 +6,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class GenresListResponse implements Serializable {
+
     @SerializedName("genres")
     List<Genre> genres;
 
