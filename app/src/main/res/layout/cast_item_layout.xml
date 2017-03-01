@@ -16,18 +16,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_gravity="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:layout_gravity="center" />
 
     <TextView
         android:id="@+id/castCharacter"
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_gravity="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
-
-
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center" />
 
 </LinearLayout>
